@@ -108,11 +108,12 @@ main div {
 }
 
 main .left {
-    width: 15%;
+    width: 20%;
+    padding-right: 2rem;
 }
 
 main .mid {
-    width: 70%;
+    width: 60%;
 }
 
 main .mid .div_dang_bai,
@@ -125,7 +126,7 @@ main .mid .div_bai_viet {
 }
 
 main .right {
-    width: 15%;
+    width: 20%;
 }
 
 .mid-left {
