@@ -1,0 +1,296 @@
+:root {
+    --bg_main: #EDF2F3;
+    --cl_main: #FF522C;
+    --cl_text_black: #000000;
+}
+
+
+/* You can add global styles to this file, and also import other style files */
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+:root {
+    --bg_main: #EDF2F3;
+    --cl_main: #FF522C;
+    --cl_text_black: #000000;
+}
+
+html,
+body {
+    margin: 0px;
+    height: 100%;
+    font-family: 'Varela Round', sans-serif;
+    background-color: var(--bg_main);
+}
+
+
+/************** header **************/
+
+header {
+    margin: 0 auto;
+    width: 70%;
+    background: white;
+    height: auto;
+    border-radius: 0px 0px 25px 25px;
+    padding: 15px 25px;
+}
+
+header .left {
+    width: 60%;
+}
+
+header .right {
+    width: 40%;
+}
+
+.header_div .logo {
+    width: 7%;
+}
+
+.header_div .div_nav {
+    width: 90%;
+}
+
+.header_div .div_nav nav li {
+    display: inline-block;
+    margin-right: 7%;
+    font-weight: bold;
+}
+
+.header_div .div_nav nav li a {
+    color: black;
+}
+
+.div_input {
+    position: relative;
+    cursor: pointer;
+}
+
+.div_input::before {
+    content: '';
+    position: absolute;
+    width: 15%;
+    height: 100%;
+    border-radius: 0px 8px 8px 0px;
+    background-color: var(--cl_main);
+    border: 2px solid var(--cl_main);
+    right: 0px;
+}
+
+.div_input .icon_search {
+    position: absolute;
+    top: 0px;
+    margin-top: 1.2%;
+    right: 4%;
+    width: 6%;
+}
+
+.div_input input {
+    padding: 7px 10px;
+    width: 80%;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.div_input input:hover {
+    border-color: #757575;
+}
+
+input:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+
+/************** header **************/
+
+main div {
+    float: left;
+}
+
+main .left {
+    width: 15%;
+}
+
+main .mid {
+    width: 70%;
+}
+
+main .mid .div_dang_bai,
+main .mid .div_bai_viet {
+    background-color: white;
+    border-radius: 25px;
+    min-height: 100px;
+    padding: 25px;
+    padding-bottom: 15px;
+}
+
+main .right {
+    width: 15%;
+}
+
+.mid-left {
+    width: 10%;
+}
+
+.mid-left img {
+    width: 70%;
+}
+
+.mid-right {
+    width: 90%;
+}
+
+.div_texa {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #C4C4C4;
+    border-radius: 10px;
+    transition: 0.4s;
+}
+
+.div_texa textarea {
+    border: none;
+}
+
+.div_texa textarea:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.form_search .control div {
+    float: left;
+}
+
+.form_search .control .left .row img {
+    width: 15%;
+    padding: 0px 14px;
+}
+
+.form_search .control .left,
+.form_search .control .right {
+    width: 50%;
+}
+
+.form_search .control .right button {
+    border: none;
+    border-radius: 10px;
+    background-color: var(--cl_main);
+    box-shadow: 4px 4px 12px #FF522C;
+    color: white;
+    padding: 10px 52px;
+}
+
+.div_bai_viet .div_info .left {
+    width: 90%;
+}
+
+.div_bai_viet .div_info .left .div_img img {
+    width: 100%;
+}
+
+.div_bai_viet .div_info .left .div_img {
+    width: 6%;
+}
+
+.border-radius-images {
+    border-radius: 12px;
+}
+
+.images {
+    height: 500px;
+}
+
+.div_bai_viet .div_info .left .div_info_us p {
+    margin-bottom: 1%;
+}
+
+.div_bai_viet .div_info .left .div_info_us .datetime {
+    color: gray;
+    font-size: 0.6vw;
+}
+
+.div_bai_viet .div_info .right {
+    width: 10%;
+}
+
+.div_bai_viet .div_info .right img {
+    width: 25%;
+    cursor: pointer;
+}
+
+.div_dieukhien img {
+    width: 30px;
+    margin-right: 0.7%;
+}
+
+.div_dieukhien span {
+    margin-right: 1.2%;
+}
+
+.div_hien_binh_luan {
+    cursor: pointer;
+}
+
+.div_hien_binh_luan img {
+    width: 1%;
+    margin-top: -10px;
+}
+
+.div_them_binhluan {
+    position: relative;
+    border-bottom: 1px solid gray;
+}
+
+.div_them_binhluan textarea {
+    border: none;
+    padding: 0px 15px;
+}
+
+textarea:focus-visible {
+    outline: -webkit-focus-ring-color auto 0px;
+}
+
+.div_them_binhluan button {
+    position: absolute;
+    width: 40px;
+    border: none;
+    background: none;
+    right: 1%;
+    margin-top: -0.7%;
+}
+
+.div_them_binhluan .meme {
+    right: 9%;
+}
+
+.div_them_binhluan .picture {
+    right: 5%;
+}
+
+
+/************** main **************/
+
+
+/************** main **************/
+
+
+/********* margin *********/
+
+.mr-5pt {
+    margin-right: 5%;
+}
+
+.mr-4pt {
+    margin-right: 4%;
+}
+
+.mr-3pt {
+    margin-right: 3%;
+}
+
+.mr-2pt {
+    margin-right: 2%;
+}
+
+.pd-20px {
+    padding: 20px;
+}
