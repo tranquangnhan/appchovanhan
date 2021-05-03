@@ -1,3 +1,9 @@
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
 :root {
     --bg_main: #EDF2F3;
     --cl_main: #FF522C;
@@ -8,11 +14,6 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
-:root {
-    --bg_main: #EDF2F3;
-    --cl_main: #FF522C;
-    --cl_text_black: #000000;
-}
 
 html,
 body {
@@ -57,7 +58,8 @@ header .right {
 }
 
 .header_div .div_nav nav li a {
-    color: black;
+    color: #3a3a3a;
+    font-size: 10pt;
 }
 
 .div_input {
@@ -175,21 +177,15 @@ main .right {
     border: none;
     border-radius: 10px;
     background-color: var(--cl_main);
-    box-shadow: 4px 4px 12px #FF522C;
+    box-shadow: 4px 4px 12px var(--cl_main);
     color: white;
-    padding: 10px 52px;
+    width: 45%;
+    padding: 7px;
+    font-size: 12pt;
 }
 
 .div_bai_viet .div_info .left {
     width: 90%;
-}
-
-.div_bai_viet .div_info .left .div_img img {
-    width: 100%;
-}
-
-.div_bai_viet .div_info .left .div_img {
-    width: 6%;
 }
 
 .border-radius-images {
@@ -199,6 +195,15 @@ main .right {
 .images {
     height: 500px;
 }
+
+.div_info_us {
+    padding-top: 1%;
+}
+
+.div_info_us h3 {
+    margin-bottom: 1px;
+}
+
 
 .div_bai_viet .div_info .left .div_info_us p {
     margin-bottom: 1%;
@@ -214,7 +219,7 @@ main .right {
 }
 
 .div_bai_viet .div_info .right img {
-    width: 25%;
+    width: 15px;
     cursor: pointer;
 }
 
@@ -267,9 +272,13 @@ textarea:focus-visible {
     right: 5%;
 }
 
+.div_images {
+    display: flex;
+}
 
-/************** main **************/
-
+.div_images > div:not(:last-child) {
+    margin-right: 2%;
+  }
 
 /************** main **************/
 
@@ -292,6 +301,74 @@ textarea:focus-visible {
     margin-right: 2%;
 }
 
+/* padding */
+
 .pd-20px {
     padding: 20px;
+}
+
+/* font size */
+
+.fz-11pt {
+    font-size: 11pt;
+}
+
+.ten_nguoi {
+    font-size: 1vw;
+    font-weight: 500;
+}
+
+.fz-1vw {
+    font-size: 1vw;
+}
+
+
+h3 {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+h6 {
+    font-size: 13px;
+    font-weight: 400;
+    color: gray;
+}
+
+h5 {
+    font-size: 15px;
+    font-weight: normal;
+    margin-bottom: 1.3%;
+}
+
+
+/* ******* # ********** */
+
+.img_avt {
+    width: 50px;
+}
+
+.img_1 {
+    flex: 1.3344;
+}
+
+.img_2 {
+    flex: 1.3345;
+}
+
+.img_3 {
+    flex: 0.7505;
+}
+
+.img_4 {
+    flex: 1.5023;
+}
+
+.img_5 {
+    flex: 0.75;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
 }
