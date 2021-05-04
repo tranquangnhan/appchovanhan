@@ -27,11 +27,26 @@
     </div>
 </header>
 <main class="mt-4">
-    <div class="left">
-        <app-menuleft></app-menuleft>
+    <div class="control_menu">
+        <button type="" class="btn_open_menu_left" (click)="show_menu()">Menu</button>
     </div>
-    <div class="mid">
-        <div class="div_dang_bai">
+    <div class="left" id="main_left">
+        <!-- <app-menuleft></app-menuleft> -->
+        <div class="menu" id="menu_left_content">
+            <div class="row ">
+                <div class="col-12">
+                    <div class="fz-1vw">Long dep trai</div><br>
+                    <div>
+                        <button class="btn_an_menu_left" (click)="hide_menu()">Ẩn</button>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="mid" id="mid_main">
+        <div class="div_dang_bai w-100">
             <!-- <div class="mid-left">
                 <img src="./assets/images/user.png" alt="" class="img-fluid">
             </div> -->
@@ -149,10 +164,10 @@
                 <span>1</span>
             </div>
             <div class="div_hien_binh_luan w-100 text-center">
-               
+
             </div>
             <div class="div_binh_luan">
-                    
+
             </div>
             <div class="form_them_binhluan w-100">
                 <form action="" method="post">

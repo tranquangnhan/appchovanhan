@@ -21,7 +21,7 @@ body {
 
 header {
     margin: 0 auto;
-    width: 70%;
+    width: 90%;
     background: white;
     height: auto;
     border-radius: 0px 0px 25px 25px;
@@ -103,12 +103,99 @@ main div {
 }
 
 main .left {
-    width: 25%;
+    width: 5%;
     padding-right: 2rem;
+    min-height: 1px;
+    transition: 0.8s;
 }
 
+/********************** css main left ***********************/
+
+main .left .menu {
+    border-radius: 0px 15px 15px 0px;
+    background-color: white;
+    position: relative;
+    z-index: 10;
+    width: 0px;
+    height: 0px;
+    display: none;    
+    transition: 0.7s;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.control_menu:hover .btn_open_menu_left {
+    transform: translateX(10px) rotate(90deg);
+}
+
+.control_menu {
+    position: fixed;
+    min-height: 100px;
+    border-radius: 0px 15px 15px 0px;
+    background-color: white;
+    display: flex;
+}
+
+.btn_open_menu_left {
+    transition: 0.4s;
+    border: none;
+    background: none;
+    color: var(--cl_text_black);
+    -ms-transform: rotate(90deg);
+    /* IE 9 */
+    transform: rotate(90deg);
+}
+
+.menu_left_close {
+    animation: menu_left_close;
+    animation-duration: 0.8s;
+}
+
+@keyframes menu_left_close {
+    form {
+        width: 100%;
+        height: 500px;
+    }
+    to {
+        width: 0%;
+        height: 0px;
+    }
+}
+
+.menu_left_open {
+    animation: menu_left_open;
+    animation-duration: 0.8s;
+}
+
+@keyframes menu_left_open {
+    form {
+        width: 0%;
+        height: 0px;
+    }
+    to {
+        width: 100%;
+        height: 500px;
+    }
+}
+
+.btn_an_menu_left {
+    background: #0458FD;
+    box-shadow: 0px 0px 15px #0458FD;
+    border-radius: 30px 0px 0px 30px;
+    border: none;
+    padding: 7px 40px;
+    color: white;
+}
+
+#menu_left_content .row{
+    transition: 0.8s;
+}
+
+/********************** css main left ***********************/
+
 main .mid {
-    width: 50%;
+    width: 90%;
+    transition: 0.8s;
 }
 
 main .mid .div_dang_bai,
@@ -121,7 +208,7 @@ main .mid .div_bai_viet {
 }
 
 main .right {
-    width: 25%;
+    width: 5%;
 }
 
 .mid-left {
@@ -186,7 +273,8 @@ main .right {
 }
 
 .images {
-    height: auto;
+    height: 500px;
+    object-fit: cover;
 }
 
 .div_info_us {
@@ -247,7 +335,7 @@ main .right {
 
 .div_them_binhluan textarea {
     border: none;
-    margin-top: 10px;    
+    margin-top: 10px;
 }
 
 textarea:focus-visible {
@@ -275,9 +363,9 @@ textarea:focus-visible {
     display: flex;
 }
 
-.div_images > div:not(:last-child) {
+.div_images>div:not(:last-child) {
     margin-right: 2%;
-  }
+}
 
 /************** main **************/
 
