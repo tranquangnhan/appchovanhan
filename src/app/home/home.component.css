@@ -4,13 +4,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --bg_main: #EDF2F3;
-    --cl_main: #FF522C;
-    --cl_text_black: #000000;
-}
-
-
 /* You can add global styles to this file, and also import other style files */
 
 @import '~bootstrap/dist/css/bootstrap.min.css';
@@ -58,8 +51,9 @@ header .right {
 }
 
 .header_div .div_nav nav li a {
-    color: #3a3a3a;
-    font-size: 10pt;
+    color: #202020;
+    font-size: 1vw;
+    font-weight: 500;
 }
 
 .div_input {
@@ -80,10 +74,9 @@ header .right {
 
 .div_input .icon_search {
     position: absolute;
-    top: 0px;
-    margin-top: 1.2%;
+    top: 19%;
     right: 4%;
-    width: 6%;
+    width: 24px;
 }
 
 .div_input input {
@@ -110,12 +103,12 @@ main div {
 }
 
 main .left {
-    width: 20%;
+    width: 25%;
     padding-right: 2rem;
 }
 
 main .mid {
-    width: 60%;
+    width: 50%;
 }
 
 main .mid .div_dang_bai,
@@ -128,7 +121,7 @@ main .mid .div_bai_viet {
 }
 
 main .right {
-    width: 20%;
+    width: 25%;
 }
 
 .mid-left {
@@ -145,8 +138,8 @@ main .right {
 
 .div_texa {
     width: 100%;
-    padding: 15px;
-    border: 1px solid #C4C4C4;
+    /* padding: 15px; */
+    /* border: 1px solid #C4C4C4; */
     border-radius: 10px;
     transition: 0.4s;
 }
@@ -193,7 +186,7 @@ main .right {
 }
 
 .images {
-    height: 500px;
+    height: auto;
 }
 
 .div_info_us {
@@ -224,8 +217,8 @@ main .right {
 }
 
 .div_dieukhien img {
-    width: 30px;
-    margin-right: 0.7%;
+    width: 22px;
+    margin-right: 10px;
 }
 
 .div_dieukhien span {
@@ -234,21 +227,27 @@ main .right {
 
 .div_hien_binh_luan {
     cursor: pointer;
+    position: relative;
+    z-index: 20;
+}
+
+.h-28px {
+    height: 28px;
 }
 
 .div_hien_binh_luan img {
-    width: 1%;
+    width: 10px;
     margin-top: -10px;
 }
 
 .div_them_binhluan {
     position: relative;
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid #000000;
 }
 
 .div_them_binhluan textarea {
     border: none;
-    padding: 0px 15px;
+    margin-top: 10px;    
 }
 
 textarea:focus-visible {
@@ -260,16 +259,16 @@ textarea:focus-visible {
     width: 40px;
     border: none;
     background: none;
-    right: 1%;
+    right: 0px;
     margin-top: -0.7%;
 }
 
 .div_them_binhluan .meme {
-    right: 9%;
+    right: 77px;
 }
 
 .div_them_binhluan .picture {
-    right: 5%;
+    right: 43px;
 }
 
 .div_images {
@@ -371,4 +370,8 @@ img {
     width: 100%;
     height: auto;
     vertical-align: middle;
+}
+
+.w-80 {
+    width: 80%;
 }
