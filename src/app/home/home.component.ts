@@ -7,50 +7,81 @@ import * as $ from "jquery";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  public checkClickOpenMenu: boolean = true;
+  public checkClickOpenMenu: boolean = false;
+  public idMove;
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  show_menu() {
-    if (this.checkClickOpenMenu == true) {
-      $("#main_left").css("width", "20%");
-      $("#mid_main").css("width", "75%");
-      $(".control_menu").css("transform", "translateX(-55px)");
-      $('#menu_left_content').addClass('menu_left_open');
-      $('#menu_left_content').removeClass('menu_left_close');
-      $('#menu_left_content').fadeIn(800, function () {
-        // this.checkClickOpenMenu = true;
+  moveMenu() {
+    var idMove = 'menu_main';
+    var check_mess = $("#mess_main").hasClass("open");
+    if (check_mess == true) {
+      var idClose = 'mess_main';
+      this.closeMenu(idClose);
+      this.openMenu(idMove);
+    } else {
+      if (this.checkClickOpenMenu == false) {
+        this.openMenu(idMove);
+      }
+      if (this.checkClickOpenMenu == true) {
+        this.closeMenu(idMove);
+      }
+    }
 
-        $('#menu_left_content').css({
-          width: "100%",
-          height: "500px"
-        });
-      });
-      setTimeout(() => {
-        this.checkClickOpenMenu = false;
-      }, 850);
+  }
+
+  moveMess() {
+    var idMove = 'mess_main';
+    var check_mess = $("#menu_main").hasClass("open");
+    if (check_mess == true) {
+      var idClose = 'menu_main';
+      this.closeMenu(idClose);
+      this.openMenu(idMove);
+    } else {
+      if (this.checkClickOpenMenu == false) {
+        this.openMenu(idMove);
+      }
+      if (this.checkClickOpenMenu == true) {
+        this.closeMenu(idMove);
+      }
     }
   }
 
-  hide_menu() {
-    if (this.checkClickOpenMenu == false) {
-      $("#main_left").css("width", "5%");
-      $("#mid_main").css("width", "90%");
-      $(".control_menu").css("transform", "translateX(0px)");
-      $('#menu_left_content').addClass('menu_left_close');
-      $('#menu_left_content').removeClass('menu_left_open');
-      $('#menu_left_content').fadeOut(800, function () {
-        $('#menu_left_content').css({
-          width: "0%",
-          height: "0px"
-        });
+  openMenu(idMove) {
+    $("#main_left").css("width", "25%");
+    $("#mid_main").css("width", "75%");
+    $("#" + idMove).removeClass("close_l");
+    $("#" + idMove).addClass("open");
+    $("#" + idMove).fadeIn(800, function () {
+      $("#" + idMove).css({
+        width: "79%",
+        height: "500px",
       });
-      setTimeout(() => {
-        this.checkClickOpenMenu = true;
-      }, 850);
-    }
+    });
+    this.resetCheckOpen(true);
+
+  }
+
+  closeMenu(idMove) {
+    $("#main_left").css("width", "5%");
+    $("#mid_main").css("width", "95%");
+    $("#" + idMove).removeClass("open");
+    $("#" + idMove).addClass("close_l");
+    $("#" + idMove).fadeOut(800, function () {
+      $("#" + idMove).css({
+        width: "0%",
+        height: "0px",
+      });
+    });
+    this.resetCheckOpen(false);
+  }
+
+  resetCheckOpen(bolen) {
+    setTimeout(() => {
+      this.checkClickOpenMenu = bolen;
+    }, 850);
   }
 }

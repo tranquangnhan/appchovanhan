@@ -98,103 +98,79 @@ input:focus-visible {
 
 /************** header **************/
 
+/********************** main ***********************/
+main {
+    width: 90%;
+    margin: 0 auto;
+}
 main div {
     float: left;
 }
 
 main .left {
     width: 5%;
-    padding-right: 2rem;
+    padding-right: 1.2rem;
     min-height: 1px;
     transition: 0.8s;
 }
 
-/********************** css main left ***********************/
-
-main .left .menu {
-    border-radius: 0px 15px 15px 0px;
+/********************** control ***********************/
+main .left .left_control {
     background-color: white;
-    position: relative;
-    z-index: 10;
-    width: 0px;
-    height: 0px;
-    display: none;    
-    transition: 0.7s;
-    overflow-y: auto;
-    overflow-x: hidden;
+    padding: 20px 10px;
+    border-radius: 20px;
+    width: 50px;
+    margin-right: 5%;
 }
 
-.control_menu:hover .btn_open_menu_left {
-    transform: translateX(10px) rotate(90deg);
-}
-
-.control_menu {
-    position: fixed;
-    min-height: 100px;
-    border-radius: 0px 15px 15px 0px;
-    background-color: white;
-    display: flex;
-}
-
-.btn_open_menu_left {
-    transition: 0.4s;
+main .left .left_control button {
     border: none;
     background: none;
-    color: var(--cl_text_black);
-    -ms-transform: rotate(90deg);
-    /* IE 9 */
-    transform: rotate(90deg);
+    cursor: pointer;
 }
 
-.menu_left_close {
-    animation: menu_left_close;
+main .left .block_hidden {
+    background-color: white;
+    border-radius: 20px;
+    overflow: auto;
+    width: 0%;
+    height: 0px;
+}
+
+.open {
+    animation: open_left;
     animation-duration: 0.8s;
 }
 
-@keyframes menu_left_close {
-    form {
-        width: 100%;
+@keyframes open_left {
+    from {
+        width: 0%;
+        height: 0px;
+    } to {
+        width: 79%;
         height: 500px;
     }
-    to {
+}
+
+.close_l {
+    animation: close_left;
+    animation-duration: 0.8s;
+}
+
+@keyframes close_left {
+    from {
+        width: 79%;
+        height: 500px;
+    } to {
         width: 0%;
         height: 0px;
     }
 }
 
-.menu_left_open {
-    animation: menu_left_open;
-    animation-duration: 0.8s;
-}
-
-@keyframes menu_left_open {
-    form {
-        width: 0%;
-        height: 0px;
-    }
-    to {
-        width: 100%;
-        height: 500px;
-    }
-}
-
-.btn_an_menu_left {
-    background: #0458FD;
-    box-shadow: 0px 0px 15px #0458FD;
-    border-radius: 30px 0px 0px 30px;
-    border: none;
-    padding: 7px 40px;
-    color: white;
-}
-
-#menu_left_content .row{
-    transition: 0.8s;
-}
-
-/********************** css main left ***********************/
+/********************** control ***********************/
 
 main .mid {
-    width: 90%;
+    width: 95%;
     transition: 0.8s;
 }
 

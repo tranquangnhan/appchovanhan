@@ -27,22 +27,17 @@
     </div>
 </header>
 <main class="mt-4">
-    <div class="control_menu">
-        <button type="" class="btn_open_menu_left" (click)="show_menu()">Menu</button>
-    </div>
     <div class="left" id="main_left">
-        <!-- <app-menuleft></app-menuleft> -->
-        <div class="menu" id="menu_left_content">
-            <div class="row ">
-                <div class="col-12">
-                    <div class="fz-1vw">Long dep trai</div><br>
-                    <div>
-                        <button class="btn_an_menu_left" (click)="hide_menu()">Ẩn</button>
-
-                    </div>
-                </div>
-            </div>
-
+        <div class="left_control">
+            <button class="d-block"><img src="../../assets/images/home.png" width="50px" alt=""></button>
+            <button class="d-block mt-2" id="open_menu" (click)="moveMenu()"><img src="../../assets/images/menu 2.png" width="50px" alt=""></button>
+            <button class="d-block mt-2" id="open_mess" (click)="moveMess()"><img src="../../assets/images/chat.png" width="50px" alt=""></button>
+        </div>
+        <div class="block_hidden menu" id="menu_main">
+            Menu
+        </div>
+        <div class="block_hidden mess" id="mess_main">
+            Mess
         </div>
     </div>
     <div class="mid" id="mid_main">
@@ -184,6 +179,5 @@
             </div>
         </div>
     </div>
-    <div class="right">right</div>
 </main>
 <footer></footer>
