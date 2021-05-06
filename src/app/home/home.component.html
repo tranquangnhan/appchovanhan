@@ -1,183 +1,262 @@
 <header class="d-flex align-items-center">
-    <div class="header_div left d-inline-block d-flex align-items-center">
-        <div class="logo float-left mr-3pt">
-            <img src="./assets/images/logo.png" alt="" class="img-fluid">
-        </div>
-        <div class="div_nav float-left">
-            <nav class="w-100">
-                <li>
-                    <a href="">Cho Và Nhận </a>
-                </li>
-                <li>
-                    <a href="">Ủng Hộ</a>
-                </li>
-                <li>
-                    <a href="">Về Chúng Tôi</a>
-                </li>
-            </nav>
-        </div>
+  <div class="header_div left d-inline-block d-flex align-items-center">
+    <div class="logo float-left mr-3pt">
+      <img src="./assets/images/free-delivery.png" alt="" class="img-fluid">
     </div>
-    <div class="header_div right d-inline-block">
-        <form action="" id="seach">
-            <div class="div_input d-flex flex-row-reverse bd-highlight">
-                <img src="./assets/images/search 2.png" class="icon_search" alt="">
-                <input type="text" placeholder="Tìm kiếm ...">
-            </div>
-        </form>
+    <div class="div_nav float-left">
+      <nav class="w-100">
+        <li>
+          <a href="">Cho Và Nhận </a>
+        </li>
+        <li>
+          <a href="">Ủng Hộ</a>
+        </li>
+        <li>
+          <a href="">Về Chúng Tôi</a>
+        </li>
+      </nav>
     </div>
+  </div>
+  <div class="header_div right d-inline-block">
+    <form action="" id="seach">
+      <div class="div_input d-flex flex-row-reverse bd-highlight">
+        <img src="./assets/images/search 2.png" class="icon_search" alt="">
+        <input type="text" placeholder="Tìm kiếm ...">
+      </div>
+    </form>
+  </div>
 </header>
 <main class="mt-4">
-    <div class="left" id="main_left">
-        <div class="left_control">
-            <button class="d-block"><img src="../../assets/images/home.png" width="50px" alt=""></button>
-            <button class="d-block mt-2" id="open_menu" (click)="moveMenu()"><img src="../../assets/images/menu 2.png" width="50px" alt=""></button>
-            <button class="d-block mt-2" id="open_mess" (click)="moveMess()"><img src="../../assets/images/chat.png" width="50px" alt=""></button>
-        </div>
-        <div class="block_hidden menu" id="menu_main">
-            Menu
-        </div>
-        <div class="block_hidden mess" id="mess_main">
-            Mess
-        </div>
+  <div class="left" id="main_left">
+    <div class="left_control">
+      <button class="d-block"><img src="../../assets/images/home.png" width="50px" alt=""></button>
+      <button class="d-block mt-2" id="open_menu" (click)="moveMenu()"><img src="../../assets/images/menu 2.png"
+          width="50px" alt=""></button>
+      <button class="d-block mt-2" id="open_mess" (click)="moveMess()"><img src="../../assets/images/chat.png"
+          width="50px" alt=""></button>
     </div>
-    <div class="mid" id="mid_main">
-        <div class="div_dang_bai w-100">
-            <!-- <div class="mid-left">
+    <div class="block_hidden menu" id="menu_main">
+      <div class="">menu</div>
+
+    </div>
+    <div class="block_hidden mess" id="mess_main">
+      <div class="container mt-2 d-flex justify-content-center">
+        <div class="row">
+          <div class="col-7 mx-1 pd-l-30px ten_nguoi">Mesages</div>
+          <div class="col-1">
+            <div class="online float-right">23</div>
+          </div>
+        </div>
+
+      </div>
+      <div class="list_us_on_mess w-100 ">
+        <div class="container">
+          <div class="user mt-3 w-100 d-flex align-items-center">
+            <div class=" mr-5pt">
+              <img src="../../assets/images/profile 2.png" class="w_45px" alt="">
+            </div>
+            <div class="w-50">
+              <h5 class="ten pd-x-2">Phương Hoàng Diệu</h5>
+              <h6 class="ten pd-x-2 mb-0 set_limit_text w-90">Chào bạn!!!</h6>
+            </div>
+            <div class="trang_thai_hoat_dong ms-auto"></div>
+          </div>
+          <div class="user mt-3 w-100 d-flex align-items-center">
+            <div class=" mr-5pt">
+              <img src="../../assets/images/profile 2.png" class="w_45px" alt="">
+            </div>
+            <div class="w-50">
+              <h5 class="ten pd-x-2">Phương Hoàng Long</h5>
+              <h6 class="ten pd-x-2 mb-0 set_limit_text w-90">Bạn đã tìm được chưa ?</h6>
+            </div>
+            <div class="trang_thai_hoat_dong ms-auto"></div>
+          </div>
+          <div class="user mt-3 w-100 d-flex align-items-center">
+            <div class=" mr-5pt">
+              <img src="../../assets/images/profile 2.png" class="w_45px" alt="">
+            </div>
+            <div class="w-50">
+              <h5 class="ten pd-x-2">Huỳnh Tấn Tài</h5>
+            </div>
+
+            <div class="trang_thai_hoat_dong ms-auto"></div>
+          </div>
+          <div class="user mt-3 w-100 d-flex align-items-center">
+            <div class=" mr-5pt">
+              <img src="../../assets/images/profile 2.png" class="w_45px" alt="">
+            </div>
+            <div class="w-50">
+              <h5 class="ten pd-x-2">Long Hoàng</h5>
+              <h6 class="ten pd-x-2 mb-0 set_limit_text w-90">Vâng người vô gia cư ở đó rất nhiều</h6>
+            </div>
+            <div class="ms-auto">
+              <h6 class="mb-0 text-end">10 phút trước</h6>
+            </div>
+          </div>
+          <div class="user mt-3 w-100 d-flex align-items-center">
+            <div class=" mr-5pt">
+              <img src="../../assets/images/profile 2.png" class="w_45px" alt="">
+            </div>
+            <div class="w-50">
+              <h5 class="ten pd-x-2">Huỳnh Tấn Tài</h5>
+            </div>
+
+            <div class="trang_thai_hoat_dong ms-auto"></div>
+          </div>
+          <div class="user mt-3 w-100 d-flex align-items-center">
+            <div class=" mr-5pt">
+              <img src="../../assets/images/profile 2.png" class="w_45px" alt="">
+            </div>
+            <div class="w-50">
+              <h5 class="ten pd-x-2">Long Hoàng</h5>
+              <h6 class="ten pd-x-2 mb-0 set_limit_text w-90">Vâng người vô gia cư ở đó rất nhiều</h6>
+            </div>
+            <div class="ms-auto">
+              <h6 class="mb-0 text-end">2 phút trước</h6>
+            </div>
+          </div>
+          <div class="form_timkiem">
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="mid" id="mid_main">
+    <div class="div_dang_bai w-100">
+      <!-- <div class="mid-left">
                 <img src="./assets/images/user.png" alt="" class="img-fluid">
             </div> -->
-            <div class="mid-right form-dang-bai w-100">
-                <form action="" method="post" class="form_search">
-                    <div class="div_texa">
-                        <textarea name="" id="" class="w-100" rows="1" placeholder="Bạn muốn đăng gì?"></textarea>
-                    </div>
-                    <div class="control w-100 mt-4">
-                        <div class="left">
-                            <div class="row">
-                                <img src="../../assets/images/picture.png" alt="" class="img-fluid">
+      <div class="mid-right form-dang-bai w-100">
+        <form action="" method="post" class="form_search">
+          <div class="div_texa">
+            <textarea name="" id="" class="w-100" rows="1" placeholder="Bạn muốn đăng gì?"></textarea>
+          </div>
+          <div class="control w-100 mt-4">
+            <div class="left">
+              <div class="row">
+                <img src="../../assets/images/picture.png" alt="" class="img-fluid">
 
-                                <div class="col-10 p-0 d-flex align-items-center fz-11pt">
-                                    Images / Videos
-                                </div>
-                            </div>
-                        </div>
-                        <div class="right">
-                            <button type="submit" class="float-right" id="btn_chiase">Chia sẻ</button>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="div_bai_viet mt-4 w-100">
-            <div class="div_info d-flex align-items-center w-100">
-                <div class="left d-inline-block d-flex align-items-center">
-                    <div class="div_img d-inline-block mr-2pt">
-                        <img src="../../assets/images/profile.png" class="img_avt" alt="">
-                    </div>
-                    <div class="div_info_us d-inline-block">
-                        <h3>Phương Hoàng Diệu</h3>
-                        <h6>7:10:50 PM - 22/4/2021</h6>
-                    </div>
+                <div class="col-10 p-0 d-flex align-items-center fz-11pt">
+                  Images / Videos
                 </div>
-                <div class="right d-inline-block d-flex justify-content-end">
-                    <img src="../../assets/images/menu.png" class="img-fluid" alt="">
-                </div>
+              </div>
             </div>
-            <div class="div_noidung mt-2">
-                <h5>Explore the new Huracán STO through videos, <b>STO through videos</b> , car renderings and much more
-                    to enjoy every single detail of the latest Lamborghini V10 creation.</h5>
-                <div class="div_images w-100">
-                    <div class="img_1">
-                        <img src="../../assets/images/cho-nhat-tao-543852.jpg" alt=""
-                            class="img-fluid images border-radius-images">
-                    </div>
-                    <div class="img_2">
-                        <img src="../../assets/images/cua-hang-do-cu-elle-viet-nam.jpg" alt=""
-                            class="img-fluid images border-radius-images">
-                    </div>
-                </div>
+            <div class="right">
+              <button type="submit" class="float-end" id="btn_chiase">Chia sẻ</button>
             </div>
-            <div class="div_dieukhien w-100 mt-3">
-                <img src="../../assets/images/heart-shape-outline-with-lining-at-right-edge.png" alt=""
-                    class="img-fluid btn-heart d-inline-block"> <span>56</span>
-                <img src="../../assets/images/comment.png" alt="" class="img-fluid btn-heart d-inline-block">
-                <span>5</span>
-                <img src="../../assets/images/share.png" alt="" class="img-fluid btn-heart d-inline-block">
-                <span>1</span>
-            </div>
-            <div class="div_hien_binh_luan w-100 text-center h-28px">
-                <p class="m-0">Hiển thị bình luận</p>
-                <img src="../../assets/images/download.png" alt="" class="img-fluid">
-            </div>
-            <div class="form_them_binhluan w-100">
-                <form action="" method="post">
-                    <div class="div_them_binhluan w-100">
-                        <textarea name="" id="" class="w-100" placeholder="Bình luận ..." rows="1"></textarea>
-                        <!-- <button type="button" class="meme"><img src="../../assets/images/greetings.png" alt=""
-                                class="img-fluid meme"></button>
-                        <button type="button" class="picture"><img src="../../assets/images/picture.png" alt=""
-                                class="img-fluid picture"></button> -->
-                        <button type="submit"><img src="../../assets/images/send-button.png" alt=""
-                                class="img-fluid w-80"></button>
-                    </div>
-                </form>
-            </div>
-        </div>
-        <div class="div_bai_viet mt-4 w-100">
-            <div class="div_info d-flex align-items-center w-100">
-                <div class="left d-inline-block d-flex align-items-center">
-                    <div class="div_img d-inline-block mr-2pt">
-                        <img src="../../assets/images/profile.png" class="img_avt" alt="">
-                    </div>
-                    <div class="div_info_us d-inline-block">
-                        <h3>Phương Hoàng Diệu</h3>
-                        <h6>7:10:50 PM - 22/4/2021</h6>
-                    </div>
-                </div>
-                <div class="right d-inline-block d-flex justify-content-end">
-                    <img src="../../assets/images/menu.png" class="img-fluid" alt="">
-                </div>
-            </div>
-            <div class="div_noidung mt-3">
-                <h5>Explore the new Huracán STO through videos, <b>STO through videos</b> , car renderings and much more
-                    to enjoy every single detail of the latest Lamborghini V10 creation.</h5>
-                <div class="div_images w-100">
-                    <div class="img_1">
-                        <img src="../../assets/images/cho-nhat-tao-543852.jpg" alt=""
-                            class="img-fluid images border-radius-images">
-                    </div>
-                    <div class="img_2">
-                        <img src="../../assets/images/cua-hang-do-cu-elle-viet-nam.jpg" alt=""
-                            class="img-fluid images border-radius-images">
-                    </div>
-                </div>
-            </div>
-            <div class="div_dieukhien w-100 mt-3">
-                <img src="../../assets/images/heart-shape-outline-with-lining-at-right-edge.png" alt=""
-                    class="img-fluid btn-heart d-inline-block"> <span>56</span>
-                <img src="../../assets/images/comment.png" alt="" class="img-fluid btn-heart d-inline-block">
-                <img src="../../assets/images/share.png" alt="" class="img-fluid btn-heart d-inline-block">
-                <span>1</span>
-            </div>
-            <div class="div_hien_binh_luan w-100 text-center">
-
-            </div>
-            <div class="div_binh_luan">
-
-            </div>
-            <div class="form_them_binhluan w-100">
-                <form action="" method="post">
-                    <div class="div_them_binhluan w-100">
-                        <textarea name="" id="" class="w-100" placeholder="Bình luận ..." rows="1"></textarea>
-                        <!-- <button type="button" class="meme"><img src="../../assets/images/greetings.png" alt=""
-                                class="img-fluid meme"></button>
-                        <button type="button" class="picture"><img src="../../assets/images/picture.png" alt=""
-                                class="img-fluid picture"></button> -->
-                        <button type="submit"><img src="../../assets/images/send-button.png" alt=""
-                                class="img-fluid w-80"></button>
-                    </div>
-                </form>
-            </div>
-        </div>
+          </div>
+        </form>
+      </div>
     </div>
+    <div class="div_bai_viet mt-4 w-100">
+      <div class="div_info d-flex align-items-center w-100">
+        <div class="left d-inline-block d-flex align-items-center">
+          <div class="div_img d-inline-block mr-2pt">
+            <img src="../../assets/images/profile 2.png" class="img_avt" alt="">
+          </div>
+          <div class="div_info_us d-inline-block">
+            <h3>Phương Hoàng Diệu</h3>
+            <h6>7:10:50 PM - 22/4/2021</h6>
+          </div>
+        </div>
+        <div class="right d-inline-block d-flex justify-content-end">
+          <img src="../../assets/images/menu.png" class="img-fluid" alt="">
+        </div>
+      </div>
+      <div class="div_noidung mt-2">
+        <h5>Explore the new Huracán STO through videos, <b>STO through videos</b> , car renderings and much more
+          to enjoy every single detail of the latest Lamborghini V10 creation.</h5>
+        <div class="div_images w-100">
+          <div class="img_1">
+            <img src="../../assets/images/cho-nhat-tao-543852.jpg" alt="" class="img-fluid images border-radius-images">
+          </div>
+          <div class="img_2">
+            <img src="../../assets/images/cua-hang-do-cu-elle-viet-nam.jpg" alt=""
+              class="img-fluid images border-radius-images">
+          </div>
+        </div>
+      </div>
+      <div class="div_dieukhien w-100 mt-3">
+        <img src="../../assets/images/heart-shape-outline-with-lining-at-right-edge.png" alt=""
+          class="img-fluid btn-heart d-inline-block"> <span>56</span>
+        <img src="../../assets/images/comment.png" alt="" class="img-fluid btn-heart d-inline-block">
+        <span>5</span>
+        <img src="../../assets/images/share.png" alt="" class="img-fluid btn-heart d-inline-block">
+        <span>1</span>
+      </div>
+      <div class="div_hien_binh_luan w-100 text-center h-28px">
+        <p class="m-0">Hiển thị bình luận</p>
+        <img src="../../assets/images/download.png" alt="" class="img-fluid">
+      </div>
+      <div class="form_them_binhluan w-100">
+        <form action="" method="post">
+          <div class="div_them_binhluan w-100">
+            <textarea name="" id="" class="w-100" placeholder="Bình luận ..." rows="1"></textarea>
+            <!-- <button type="button" class="meme"><img src="../../assets/images/greetings.png" alt=""
+                                class="img-fluid meme"></button>
+                        <button type="button" class="picture"><img src="../../assets/images/picture.png" alt=""
+                                class="img-fluid picture"></button> -->
+            <button type="submit"><img src="../../assets/images/send-button.png" alt="" class="img-fluid w-80"></button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="div_bai_viet mt-4 w-100">
+      <div class="div_info d-flex align-items-center w-100">
+        <div class="left d-inline-block d-flex align-items-center">
+          <div class="div_img d-inline-block mr-2pt">
+            <img src="../../assets/images/profile 2.png" class="img_avt" alt="">
+          </div>
+          <div class="div_info_us d-inline-block">
+            <h3>Phương Hoàng Diệu</h3>
+            <h6>7:10:50 PM - 22/4/2021</h6>
+          </div>
+        </div>
+        <div class="right d-inline-block d-flex justify-content-end">
+          <img src="../../assets/images/menu.png" class="img-fluid" alt="">
+        </div>
+      </div>
+      <div class="div_noidung mt-3">
+        <h5>Explore the new Huracán STO through videos, <b>STO through videos</b> , car renderings and much more
+          to enjoy every single detail of the latest Lamborghini V10 creation.</h5>
+        <div class="div_images w-100">
+          <div class="img_1">
+            <img src="../../assets/images/cho-nhat-tao-543852.jpg" alt="" class="img-fluid images border-radius-images">
+          </div>
+          <div class="img_2">
+            <img src="../../assets/images/cua-hang-do-cu-elle-viet-nam.jpg" alt=""
+              class="img-fluid images border-radius-images">
+          </div>
+        </div>
+      </div>
+      <div class="div_dieukhien w-100 mt-3">
+        <img src="../../assets/images/heart-shape-outline-with-lining-at-right-edge.png" alt=""
+          class="img-fluid btn-heart d-inline-block"> <span>56</span>
+        <img src="../../assets/images/comment.png" alt="" class="img-fluid btn-heart d-inline-block">
+        <img src="../../assets/images/share.png" alt="" class="img-fluid btn-heart d-inline-block">
+        <span>1</span>
+      </div>
+      <div class="div_hien_binh_luan w-100 text-center">
+
+      </div>
+      <div class="div_binh_luan">
+
+      </div>
+      <div class="form_them_binhluan w-100">
+        <form action="" method="post">
+          <div class="div_them_binhluan w-100">
+            <textarea name="" id="" class="w-100" placeholder="Bình luận ..." rows="1"></textarea>
+            <!-- <button type="button" class="meme"><img src="../../assets/images/greetings.png" alt=""
+                                class="img-fluid meme"></button>
+                        <button type="button" class="picture"><img src="../../assets/images/picture.png" alt=""
+                                class="img-fluid picture"></button> -->
+            <button type="submit"><img src="../../assets/images/send-button.png" alt="" class="img-fluid w-80"></button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
 </main>
 <footer></footer>

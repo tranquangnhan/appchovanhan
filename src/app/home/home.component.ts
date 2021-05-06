@@ -51,8 +51,8 @@ export class HomeComponent implements OnInit {
   }
 
   openMenu(idMove) {
-    $("#main_left").css("width", "25%");
-    $("#mid_main").css("width", "75%");
+    $("#main_left").css("width", "30%");
+    $("#mid_main").css("width", "70%");
     $("#" + idMove).removeClass("close_l");
     $("#" + idMove).addClass("open");
     $("#" + idMove).fadeIn(800, function () {

@@ -1,6 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 :root {
     --bg_main: #EDF2F3;
-    --cl_main: #ff451b;
+    /* --cl_main: #ff451b; */
+
+    --cl_main: #0458FD;
+
     --cl_text_black: #202020;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
 }
