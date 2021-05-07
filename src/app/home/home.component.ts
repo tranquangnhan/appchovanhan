@@ -58,7 +58,7 @@ export class HomeComponent implements OnInit {
     $("#" + idMove).fadeIn(800, function () {
       $("#" + idMove).css({
         width: "79%",
-        height: "500px",
+        height: "398px",
       });
     });
     this.resetCheckOpen(true);
@@ -84,4 +84,9 @@ export class HomeComponent implements OnInit {
       this.checkClickOpenMenu = bolen;
     }, 850);
   }
+
+  dropdown(iddrop) {
+    $('#' + iddrop).slideToggle(460);
+  }
+
 }
