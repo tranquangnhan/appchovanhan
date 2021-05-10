@@ -208,7 +208,6 @@ main .left .block_hidden::-webkit-scrollbar {
   display: none;
 }
 
-
 .open {
   animation: open_left;
   animation-duration: 0.8s;
@@ -515,10 +514,72 @@ p.div_content_comment {
   margin: 20px 10px 10px 10px;
 }
 
+
+.top-70px {
+  top: 70px;
+}
+
+.img_motal_newmember {
+  width: 60px;
+  position: absolute;
+  top: 15px;
+  left: calc(50% - 30px);
+}
+
+.ip_modal_newmember {
+  background: #EBF4F2;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+}
+
+.body_modal_newmember {
+  padding: 65px 30px 10px 30px;
+}
+
+.xacnhan_modal_newmember {
+  background: var(--cl_main);
+  box-shadow: 0px 3px 8px var(--cl_main);
+  color: white;
+  padding: 10px 70px;
+  border-radius: 30px;
+  margin: 10px 0px 20px 0px;
+}
+
+.footer_newmember {
+  justify-content: space-between;
+}
+
+.icon_right_header {
+  width: 35px;
+  height: 35px;
+  background: var(--cl_main);
+  color: white;
+  text-align: center;
+  border-radius: 30px;
+  line-height: 35px;
+  margin-left: 10px;
+}
+
+.inputTimKiem {
+  background: #EBF4F2;
+  border: none;
+  padding: 6px 20px;
+  border-radius: 30px;
+  width: 250px;
+}
+
+input.inputTimKiem::placeholder {
+  color: rgb(11, 64, 161);
+}
+
 /************** main **************/
 
 
 /********* margin *********/
+.mr-r-10px {
+  margin-right: 10px;
+}
 .mr-5pt {
   margin-right: 5%;
 }

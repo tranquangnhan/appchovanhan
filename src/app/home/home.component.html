@@ -1,4 +1,35 @@
 <header class="d-flex align-items-center">
+  <div class="modal fade motal_newmember" id="showFormNewMember" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="showFormNewMemberLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content top-70px">
+
+        <div class="modal-body body_modal_newmember">
+                    <img src="./assets/images/user clmain.png" class="img_motal_newmember" alt="">
+
+          <form>
+            <div class="mb-3">
+              <label class="form-label">Số điện thoại</label>
+              <input type="number" class="form-control useFontAwesomeFamily ip_modal_newmember"  placeholder="&#xf167;">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Địa chỉ</label>
+              <input type="text" class="form-control ip_modal_newmember" id="">
+              <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
+            </div>
+            <div class="w-100 text-center">
+              <button type="button" class="btn xacnhan_modal_newmember mx-auto">Xác nhận</button>
+
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer footer_newmember">
+          <h6 class="modal-title" id="showFormNewMemberLabel">Nhập thông tin của bạn (Chỉ nhập một lần)</h6>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="header_div left d-inline-block d-flex align-items-center">
     <div class="logo float-left mr-3pt">
       <img src="./assets/images/free-delivery.png" alt="" class="img-fluid">
@@ -17,13 +48,24 @@
       </nav>
     </div>
   </div>
-  <div class="header_div right d-inline-block">
-    <form action="" id="seach">
-      <div class="div_input d-flex flex-row-reverse bd-highlight">
-        <img src="./assets/images/search 2.png" class="icon_search" alt="">
-        <input type="text" placeholder="Tìm kiếm ...">
+  <div class="header_div right d-inline-block d-flex flex-row-reverse bd-highlight">
+
+    <div class="timkiem position-relative">
+      <form action="" id="seach" class="d-inline-block">
+        <input type="text" class="inputTimKiem" placeholder="Tìm kiếm">
+      </form>
+      <div class="icon_right_header d-inline-block">
+        <i class="fas fa-search"></i>
       </div>
-    </form>
+
+    </div>
+    <div class="user d-inline-block">
+      <div class="d-inline-block cl-black-main">Hoàng Long</div>
+      <div class="icon_right_header d-inline-block mr-r-10px">
+        <i class="far fa-user"></i>
+      </div>
+
+    </div>
   </div>
 </header>
 <main class="mt-4">
@@ -192,6 +234,8 @@
       <!-- <div class="mid-left">
                 <img src="./assets/images/user.png" alt="" class="img-fluid">
             </div> -->
+      <!-- Modal -->
+
       <div class="mid-right form-dang-bai w-100">
         <form action="" method="post" class="form_search">
           <div class="div_texa">
@@ -208,7 +252,9 @@
               </div>
             </div>
             <div class="right">
-              <button type="submit" class="float-end" id="btn_chiase">Chia sẻ</button>
+              <button type="button" class="float-end" id="btn_chiase" data-bs-toggle="modal"
+                data-bs-target="#showFormNewMember">Chia
+                sẻ</button>
             </div>
           </div>
         </form>

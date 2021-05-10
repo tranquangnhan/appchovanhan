@@ -89,4 +89,8 @@ export class HomeComponent implements OnInit {
     $('#' + iddrop).slideToggle(460);
   }
 
+  showFormNhapThongTinBanDau() {
+    
+  }
+
 }

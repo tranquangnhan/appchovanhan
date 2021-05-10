@@ -130,7 +130,7 @@ main {
     top: 20px;
     left: 65px;
     z-index: 20;
-    animation: icon_1 5s infinite;    
+    animation: icon_1 5s infinite;
 }
 
 .icon_2::after {
@@ -143,15 +143,15 @@ main {
     top: 20px;
     left: 92px;
     z-index: 20;
-    animation: icon_2 5s infinite;    
+    animation: icon_2 5s infinite;
 } */
 
 
-/* 
+/*
 @keyframes icon_1 {
     form {
         width: 0%;
-    } 
+    }
     to {
         width: 55%;
     }
@@ -160,7 +160,7 @@ main {
 @keyframes icon_2 {
     form {
         width: 55%;
-    } 
+    }
     to {
         width: 0%;
     }
@@ -169,27 +169,45 @@ main {
 
 /* 3 hình nằm dưới */
 
+.w-25px {
+  width: 25px;
+}
+
 
 /* button footer */
 
-.button_footer {
-    position: absolute;
-    margin-top: 38%;
-    left: 7.65625%;
+.xemthu {
+  position: absolute;
+  margin-top: 20px;
+  left: 0px;
+  text-align: center;
+}
+
+.xemthu a {
+  text-decoration: none;
+  color: #202020  ;
 }
 
 .button_footer .btn_thamgia {
-    border: none;
-    background: #044AFD;
-    border-radius: 15px;
-    padding: 10px 135px;
-    color: white;
+  border: none;
+    background: #4285F4;
+    border-radius: 5px;
+    padding: 7px 10px;
+    color: #ffffff;
     font-weight: 500;
     transition: 1s;
 }
 
 .btn_thamgia {
     position: relative;
+}
+
+.btn_thamgia img {
+  background: white;
+  width: 30px;
+  padding: 4px;
+  border-radius: 5px;
+  margin-right: 10px;
 }
 
 .btn_thamgia:hover .button_footer_hover {
