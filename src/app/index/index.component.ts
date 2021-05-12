@@ -35,7 +35,7 @@ export class IndexComponent implements OnInit {
 
         localStorage.setItem('user',JSON.stringify(data));
 
-        // this.router.navigate(['home']);
+        this.router.navigate(['home']);
       }
       console.log(this.socialUser)
     });
